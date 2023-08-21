@@ -1,0 +1,20 @@
+body {
+  background-color: aqua;
+}
+
+h2::first-letter {
+  color: green;
+  font-variant: small-caps;
+}
+h1::first-letter {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+h1::first-line {
+  color: green;
+  font-variant: small-caps;
+}
+h2::first-letter {
+  color: #ff0000;
+  font-variant: small-caps;
+}

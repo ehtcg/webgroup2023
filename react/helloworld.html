@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+
+      const container = document.getElementById("mydiv");
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />);
+    </script>
+
+    <hr />
+    <h2>Get Parent HTML Element</h2>
+    <p id="01">Hello World!</p>
+    <p id="02">Hello Sweden!</p>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML =
+        document.getElementById("02").parentNode.nodeName;
+    </script>
+  </body>
+</html>
